@@ -11,6 +11,13 @@ runs
 .idea/jarRepositories.xml
 .idea/compiler.xml
 .idea/libraries/
+run
+runs
+runserver
+**/.cache
+
+### IntelliJ IDEA ###
+.idea
 *.iws
 *.iml
 *.ipr

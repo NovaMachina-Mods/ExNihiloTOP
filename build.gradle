@@ -181,7 +181,7 @@ project.tasks.named("processResources") {
     outputs.upToDateWhen { false }
     filesMatching('pack.mcmeta') {
         processJsonFile([
-                description : project.mod_name + " resources",
+                description : mod_name + " resources",
                 pack_format : resource_pack_format,
                 "forge:resource_pack_format" : resource_pack_format,
                 "forge:data_pack_format" : data_pack_format
@@ -196,7 +196,7 @@ project.tasks.named("processResources") {
                 '',
                 '[[mods]]',
                 '    modId="' + project.mod_id + '"',
-                '    logoFile="' + project.mod_id + '.png"',
+                '    logoFile="logo.png"',
                 '    version="' + project.mod_version + '"',
                 '    displayName="' + project.mod_name + '"',
                 '    updateJSONURL="https://api.modrinth.com/updates/' + project.modrinth_project_id + '/forge_updates.json"',
