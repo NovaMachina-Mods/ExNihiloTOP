@@ -1,0 +1,42 @@
+modLoader="javafml"
+loaderVersion="[1,)"
+issueTrackerURL="https://github.com/NovaMachina-Mods/ExNihiloTOP/issues"
+license="CC BY-NC-SA 4.0"
+
+[[mods]]
+    modId="exntop"
+    logoFile="exntop.png"
+    version="1.0.0"
+    displayName="Ex Nihilo: Sequentia - TOP Addon"
+    updateJSONURL="https://api.modrinth.com/updates/000000/forge_updates.json"
+    authors="NovaMachina"
+    description='''Adds support for The One Probe to Ex Nihilo: Sequentia'''
+
+[[dependencies.exntop]]
+    modId="neoforge"
+    type="required"
+    versionRange="[20.4, 21)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.exntop]]
+    modId="minecraft"
+    type="required"
+    versionRange="[1.20.4,1.21)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.exntop]]
+   modId="exnihilosequentia"
+   type="required"
+   ordering="AFTER"
+   side="BOTH"
+   versionRange="[6.0.0, 7.0.0)"
+
+[[dependencies.exntop]]
+   modId="theoneprobe"
+   type="required"
+   ordering="AFTER"
+   side="BOTH"
+   versionRange="[1.20.4_neo-11.0.1, 1.20.4_neo-12.0.0)"
+
