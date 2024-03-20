@@ -1,11 +1,11 @@
-![CurseForge Downloads](https://img.shields.io/curseforge/dt/000000style=for-the-badge&logo=curseforge)
+![CurseForge Downloads](https://img.shields.io/curseforge/dt/000000?style=for-the-badge&logo=curseforge)
 ![CurseForge Downloads](https://img.shields.io/curseforge/game-versions/000000?style=for-the-badge&logo=curseforge)
 ![Modrinth Downloads](https://img.shields.io/modrinth/dt/00000000?style=for-the-badge&logo=modrinth)
 ![Modrinth Downloads](https://img.shields.io/modrinth/game-versions/00000000?style=for-the-badge&logo=modrinth)
 ![Static Badge](https://img.shields.io/badge/license-CC_BY--NC--SA_4.0-green?style=for-the-badge)
-![GitHub Issues or Pull Requests](https://img.shields.io/github/issues/NovaMachina-Mods/ModTemplate?style=for-the-badge&logo=github)
-![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/NovaMachina-Mods/ModTemplate/build_1_20.yaml?style=for-the-badge&logo=github&label=1.20%20Build)
-![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/NovaMachina-Mods/ModTemplate/build_1_20_dev.yaml?style=for-the-badge&logo=github&label=1.20-dev%20Build)
+![GitHub Issues or Pull Requests](https://img.shields.io/github/issues/NovaMachina-Mods/ExNihiloTOP?style=for-the-badge&logo=github)
+![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/NovaMachina-Mods/ExNihiloTOP/build_1_20.yaml?style=for-the-badge&logo=github&label=1.20%20Build)
+![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/NovaMachina-Mods/ExNihiloTOP/build_1_20_dev.yaml?style=for-the-badge&logo=github&label=1.20-dev%20Build)
 
 # ModTemplate
 
