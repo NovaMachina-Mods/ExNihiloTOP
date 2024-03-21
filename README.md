@@ -1,25 +1,23 @@
-![CurseForge Downloads](https://img.shields.io/curseforge/dt/000000?style=for-the-badge&logo=curseforge)
-![CurseForge Downloads](https://img.shields.io/curseforge/game-versions/000000?style=for-the-badge&logo=curseforge)
-![Modrinth Downloads](https://img.shields.io/modrinth/dt/00000000?style=for-the-badge&logo=modrinth)
-![Modrinth Downloads](https://img.shields.io/modrinth/game-versions/00000000?style=for-the-badge&logo=modrinth)
+![CurseForge Downloads](https://img.shields.io/curseforge/dt/990064?style=for-the-badge&logo=curseforge)
+![CurseForge Downloads](https://img.shields.io/curseforge/game-versions/990064?style=for-the-badge&logo=curseforge)
+![Modrinth Downloads](https://img.shields.io/modrinth/dt/IrKyOGVT?style=for-the-badge&logo=modrinth)
+![Modrinth Downloads](https://img.shields.io/modrinth/game-versions/IrKyOGVT?style=for-the-badge&logo=modrinth)
 ![Static Badge](https://img.shields.io/badge/license-CC_BY--NC--SA_4.0-green?style=for-the-badge)
 ![GitHub Issues or Pull Requests](https://img.shields.io/github/issues/NovaMachina-Mods/ExNihiloTOP?style=for-the-badge&logo=github)
 ![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/NovaMachina-Mods/ExNihiloTOP/build_1_20.yaml?style=for-the-badge&logo=github&label=1.20%20Build)
 ![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/NovaMachina-Mods/ExNihiloTOP/build_1_20_dev.yaml?style=for-the-badge&logo=github&label=1.20-dev%20Build)
 
-# ModTemplate
+# Ex Nihilo: Sequentia - TOP Addon
 
-This is a mod template for NovaMachina Mods. It does not contain any Java code,
+Addon for Ex Nihilo: Sequentia to add support for TOP
 
 # Discord
 
-This template is supported on the NovaMachina Mods [discord server](https://discord.gg/CJyAkuw) where you can chat with other users and the developers of this template.
-
-[![Discord](https://img.shields.io/discord/749057733709267005?style=for-the-badge&logo=discord)](https://discord.gg/CJyAkuw)
+Ex Nihilo: Sequentia - TOP Addon is on the NovaMachina Mods [discord server](https://discord.gg/CJyAkuw) where you can chat with other Ex Nihilo: Sequentia users and the developers.
 
 # Translating
 
-If you would like to help translate this template, please create a pull request with your translation.
+If you would like to help translate Ex Nihilo: Sequentia, please create a pull request with your translation.
 
 # License
 
@@ -27,7 +25,32 @@ If you would like to help translate this template, please create a pull request 
 
 The source code of this work is licensed under a [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-nc-sa/4.0/).
 
-Artwork of this mod is licensed under an All rights reserved license: Copyright &copy;2024 NovaMachina-Mods All rights reserved.
+Artwork of this mod is licensed under an All rights reserved license: Copyright &copy;2023 NovaMachina-Mods All rights reserved.
+
+# Maven
+
+Ex Nihilo: Sequentia - TOP Addon is avaliable via the [NovaMachina Mods artifact repository](https://cloudsmith.io/~novamachina-mods/repos/ex-nihilo-sequentia/packages/) for developers wishing to utilize its API.
+
+Add the following to your `build.gradle`:
+
+```groovy
+repositories {
+    maven {
+        url = "https://dl.cloudsmith.io/public/novamachina-mods/release/maven/"
+
+    }
+}
+
+dependencies {
+    implementation(fg.deobf("novamachina.exntop:exntop:${exntop_version}"))
+}
+```
+
+Add the following to your `gradle.properties` (see [Maven](https://cloudsmith.io/~novamachina-mods/repos/release/packages/) for the list of available versions):
+
+```properties
+exntop_version: 1.20.4-1.0.0
+```
 
 [![Hosted By: Cloudsmith](https://img.shields.io/badge/OSS%20hosting%20by-cloudsmith-blue?logo=cloudsmith&style=for-the-badge)](https://cloudsmith.com)
 
