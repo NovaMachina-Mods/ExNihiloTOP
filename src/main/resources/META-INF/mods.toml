@@ -8,7 +8,7 @@ license="CC BY-NC-SA 4.0"
     logoFile="logo.png"
     version="1.0.0"
     displayName="Ex Nihilo: Sequentia - TOP Addon"
-    updateJSONURL="https://api.modrinth.com/updates/000000/forge_updates.json"
+    updateJSONURL="https://api.modrinth.com/updates/IrKyOGVT/forge_updates.json"
     authors="NovaMachina"
     description='''Adds support for The One Probe to Ex Nihilo: Sequentia'''
 

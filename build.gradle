@@ -102,7 +102,7 @@ dependencies {
 
 modDependencies = [
         [ modId: "exnihilosequentia", type: "required", ordering: "AFTER", side: "BOTH", versionRange: exnihilo_version_range],
-        [ modId: "theoneprobe", type: "required", ordering: "AFTER", side: "BOTH", versionRange: top_version_range]
+        [ modId: "theoneprobe", type: "required", ordering: "AFTER", side: "BOTH", versionRange: top_version_range, slug: "the-one-probe"]
 ]
 modMixins = []
 
@@ -225,10 +225,12 @@ project.tasks.named("processResources") {
                     dependency.each {
                         entry ->
                             {
-                                if (entry.value instanceof Boolean || entry.value instanceof Number) {
-                                    lines.add('   ' + entry.key + '=' + entry.value)
-                                } else {
-                                    lines.add('   ' + entry.key + '="' + entry.value + '"')
+                                if(entry.key != 'slug') {
+                                    if (entry.value instanceof Boolean || entry.value instanceof Number) {
+                                        lines.add('   ' + entry.key + '=' + entry.value)
+                                    } else {
+                                        lines.add('   ' + entry.key + '="' + entry.value + '"')
+                                    }
                                 }
                             }
                     }
@@ -328,10 +330,12 @@ project.modrinth {
         if (project.hasProperty("modDependencies")) {
             project.modDependencies.each {
                 dependency -> {
+                    String modId = dependency["slug"] ?: dependency["modId"]
+                    println "MOD ID: " + modId
                     if(dependency["type"] == "required") {
-                        required.project dependency["modId"]
+                        required.project modId
                     }else if(dependency["type"] == "optional") {
-                        optional.project dependency["modId"]
+                        optional.project modId
                     }
                 }
             }
@@ -354,10 +358,11 @@ project.curseforge.project {
         relations {
             project.modDependencies.each {
                 dependency -> {
+                    String modId = dependency["slug"] ?: dependency["modId"]
                     if(dependency["type"] == "required") {
-                        requiredDependency dependency["modId"]
+                        requiredDependency modId
                     }else if(dependency["type"] == "optional") {
-                        optionalDependency dependency["modId"]
+                        optionalDependency modId
                     }
                 }
             }
